@@ -45,27 +45,3 @@
    background-image: -ms-linear-gradient(top, #2577a3 0%, #20668c 100%);
    color: #fff;
    }
-
-@font-face {
-
-font-family: 'Regular';
-
-src: local ("Regular"),
-
-src: url('//dinex.zendesk.com/hc/theme_assets/729509/200098478/NeoSans_-Regular-webfont.eot');
-
-src: url('//dinex.zendesk.com/hc/theme_assets/729509/200098478/NeoSans_-Regular-webfont.eot?#iefix') format('eot'),
-
-url('//dinex.zendesk.com/hc/theme_assets/729509/200098478/NeoSans-Regular-webfont.woff') format('woff'),
-
-url('//dinex.zendesk.com/hc/theme_assets/729509/200098478/NeoSans-Regular-webfont.woff2') format('woff2'),
-
-url('//dinex.zendesk.com/hc/theme_assets/729509/200098478/Neo_Sans.ttf') format('truetype'),
-
-url('//dinex.zendesk.com/hc/theme_assets/729509/200098478/NeoSans.svg#webfont') format('svg');
-
-font-weight: 400;
-
-font-style: normal;
-
-}
