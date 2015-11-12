@@ -1,4 +1,4 @@
-.dinexbutton {
+.button {
    border: 1px solid #0a3c59;
    background: #1996cc;
    background: -webkit-gradient(linear, left top, left bottom, from(#36abea), to(#1996cc));
@@ -21,7 +21,7 @@
    text-decoration: none;
    vertical-align: middle;
    }
-.dinexbutton:hover {
+.button:hover {
    border: 1px solid #0a3c59;
    text-shadow: #1e4158 0 1px 0;
    background: #1996cc;
@@ -33,7 +33,7 @@
    background-image: -ms-linear-gradient(top, #36abea 0%, #1996cc 100%);
    color: #ffffff;
    }
-.dinexbutton:active {
+.button:active {
    text-shadow: #1e4158 0 1px 0;
    border: 1px solid #0a3c59;
    background: #20668c;
