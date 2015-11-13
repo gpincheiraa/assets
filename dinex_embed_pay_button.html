@@ -1,0 +1,22 @@
+<!-- BOTON DE PAGO DINEX -->
+<div id="dinex_pay_button"></div>
+<script type="text/javascript">
+
+  /* * * COMPELETAR DATOS DEL PAGO * * */
+  var destinatario_del_pago = '',
+      monto = '',
+      mensaje = '',
+      invoice = '',
+      exp = '',
+      return_url = '',
+      abort_url = '';
+
+  /* * * NO EDITAR BAJO ESTA LINEA * * */
+  (function() {
+      var dnx = document.createElement('script'); dnx.type = 'text/javascript'; dnx.async = true;
+      dnx.src = 'http://localhost:8000/dinexbutton.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dnx);
+  })();
+</script>
+<noscript>Por favor habilita JavaScript en tu navegador para ver el botón de pago <a href="https://dinex.cl">Dinex</a></noscript>
+<!-- FIN BOTON DE PAGO DINEX -->
