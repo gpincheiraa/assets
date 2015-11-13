@@ -15,44 +15,43 @@ var payment_ok = true;
 
 if(destinatario_del_pago == '' || monto == '') {
   payment_ok = false;
-} else {
-
-  monto += '/DNX';
-
-  payment_link += destinatario_del_pago + '&amount=' + monto;
-
-  if(mensaje != '') {
-    payment_link += '&label=' + mensaje;
-  }
-
-  if(invoice != '') {
-    //test invoice format
-    if(!invoiceRegex.test(invoice)) {
-      payment_ok = false;
-    } else {
-      payment_link += '&invoice=' + invoice;
-    }
-  }
-
-  if(return_url != '') {
-    payment_link += '&return_url=' + return_url;
-  }
-
-  if(abort_url != '') {
-    payment_link += '&abort_url=' + abort_url;
-  }
-
-  if(exp != '') {
-    payment_link += '&exp=' + exp;
-  }
-
-  if (payment_ok) {
-    html_text = '<div><a href="' + payment_link + '" class="dinexbutton">Pagar con Dinex</a></div>';
-  } else {
-    html_text = '<div><a href="http://help.dinex.cl/dinexpro/pago-uri">Pago mal formado. Sigue este enlace para revisar las instrucciones</a></div>';
-  }
-
 }
+
+monto += '/DNX';
+
+payment_link += destinatario_del_pago + '&amount=' + monto;
+
+if(mensaje != '') {
+  payment_link += '&label=' + mensaje;
+}
+
+if(invoice != '') {
+  //test invoice format
+  if(!invoiceRegex.test(invoice)) {
+    payment_ok = false;
+  } else {
+    payment_link += '&invoice=' + invoice;
+  }
+}
+
+if(return_url != '') {
+  payment_link += '&return_url=' + return_url;
+}
+
+if(abort_url != '') {
+  payment_link += '&abort_url=' + abort_url;
+}
+
+if(exp != '') {
+  payment_link += '&exp=' + exp;
+}
+
+if (payment_ok) {
+  html_text = '<div><a href="' + payment_link + '" class="dinexbutton">Pagar con Dinex</a></div>';
+} else {
+  html_text = '<div><a href="http://help.dinex.cl/dinexpro/pago-uri">Pago mal formado. Sigue este enlace para revisar las instrucciones</a></div>';
+}
+
 
 var content = document.getElementById('dinex_pay_button');
 content.innerHTML = style + html_text;
