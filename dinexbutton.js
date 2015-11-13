@@ -8,7 +8,7 @@ var html_text = '';
 var invoiceRegex = /^[a-zA-Z0-9\-]{0,300}$/;
 
 //payment link
-var payment_link = 'https://dinex.cl/webapp/send?to=';
+var payment_link = 'https://dinex.cl/webapp/#/send?to=';
 
 //payment validator
 var payment_ok = true;
