@@ -13,16 +13,16 @@ var payment_link = 'https://dinex.cl/webapp/#/send?to=';
 //payment validator
 var payment_ok = true;
 
-if(destinatario_del_pago == '' || monto == '') {
+if(to == '' || amount == '') {
   payment_ok = false;
 }
 
-monto += '/DNX';
+amount += '/DNX';
 
-payment_link += destinatario_del_pago + '&amount=' + monto;
+payment_link += to + '&amount=' + amount;
 
-if(mensaje != '') {
-  payment_link += '&label=' + mensaje;
+if(label != '') {
+  payment_link += '&label=' + label;
 }
 
 if(invoice != '') {
